@@ -1,11 +1,10 @@
 package chapter_11_Systems.separateConstructingASystemfromUsingIt;
 
-
-public class GoodUserService {
+public class SeparetUserService {
     private final Database db;
 
-    public GoodUserService(Database db) {
-        this.db = db;
+    public SeparetUserService() {
+        this.db = new Database();
     }
 
     public void saveUser(String name) {
